@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  // --font-sizes
+  --text-size: 1.6rem;
+  --header1: 3.6rem;
+  --header2: 2.8rem;
+  --header3: 2.2rem;
+  --header4: 1.6rem;
+  --header5: 1.3rem;
+  --header6: 1rem;
+
+  // --colors
+  --text-color: #fff;
+  --main-color1: #eee;
+  --main-color2: #fff;
+  --main-color3: #777;
+}
+
+// Mixin's
+@mixin flex($row, $justify, $align) {
+  display: flex;
+  flex-direction: $row;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #2a2f4a;
+}
+
+a,
+p,
+li,
+input,
+label,
+div {
+  font-size: var(--text-size);
+  color: var(--text-color);
+}
+
+h1 {
+  font-size: var(--header1);
+}
+h2 {
+  font-size: var(--header2);
+}
+h3 {
+  font-size: var(--header3);
+}
+h4 {
+  font-size: var(--header4);
+}
+h5 {
+  font-size: var(--header5);
+}
+h6 {
+  font-size: var(--header6);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+// ---

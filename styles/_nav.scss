@@ -1,0 +1,44 @@
+nav {
+  height: 60px;
+  padding: 0 15px;
+  @include flex(row, space-between, center);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
+  position: relative;
+  z-index: 1;
+  #logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    span {
+      padding: 5px;
+      background-color: #fff;
+      color: rgba(0, 0, 0, 5);
+      margin-right: 15px;
+      border-radius: 2px;
+    }
+
+    &:hover {
+      span {
+        transition: all 300ms ease-in;
+        background-color: #9bf1ff;
+      }
+      p {
+        transition: all 300ms ease-in;
+        color: #9bf1ff;
+      }
+    }
+  }
+  .burger-menu {
+    cursor: pointer;
+    @include flex(row, center, center);
+    i {
+      margin-left: 5px;
+    }
+    &:hover {
+      transition: all 300ms ease-in;
+      color: #9bf1ff;
+    }
+  }
+}
