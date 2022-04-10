@@ -1,1 +1,129 @@
 @import '_globals.scss', '_nav.scss', '_main.scss', '_footer.scss';
+@media screen and (max-width: 1680px) {
+  main {
+    .cards-container {
+      .cards {
+        height: 400px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  main {
+    .cards-container {
+      .cards {
+        height: 360px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  main {
+    .banner {
+      h1 {
+        font-size: 4.6rem;
+      }
+      .get-started {
+        flex-direction: column;
+        align-items: flex-start;
+        button {
+          margin: 2rem 0;
+          font-size: 1.6rem;
+          padding: 8px 16px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  main {
+    .cards-container {
+      .cards-1,
+      .cards-2,
+      .cards-3 {
+        .card {
+          h2 {
+            font-size: 3.2rem;
+          }
+          p {
+            font-size: 1.4rem;
+          }
+          &:nth-of-type(1) {
+            flex: 1;
+          }
+          &:nth-of-type(2) {
+            flex: 1;
+          }
+        }
+      }
+    }
+    .contact-section {
+      .contact-wrapper {
+        width: 100%;
+        .info-box:first-child {
+          border-top: solid 1px #363b56;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 740px) {
+  main {
+    .banner {
+      height: 400px;
+      justify-content: flex-end;
+      h1 {
+        font-size: 3.2rem;
+        padding: 0 0 1rem;
+        margin-bottom: -20px;
+      }
+      p {
+        font-size: 12px !important;
+      }
+      .get-started {
+        button {
+          margin: 1rem 0;
+          font-size: 1.2rem;
+          padding: 8px 16px;
+        }
+        p,
+        button {
+          letter-spacing: 0.15rem;
+        }
+      }
+    }
+    .cards-container {
+      .cards {
+        .card {
+          padding: 0 4rem 0 2rem;
+          p {
+            letter-spacing: 0.1;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    .cards-container {
+      .cards {
+        .card {
+          min-width: 300px;
+          h2 {
+            font-size: 2.4rem;
+            padding-bottom: 0.5rem;
+          }
+          p {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -38,12 +38,13 @@ main {
       z-index: 1;
       p,
       button {
-        letter-spacing: 0.25em;
+        letter-spacing: 0.14em;
         font-weight: 600;
         font: inherit;
       }
       p {
         line-height: 25px;
+        max-width: 500px;
       }
       button {
         background-color: transparent;
@@ -78,7 +79,6 @@ main {
         flex-direction: column;
         justify-content: center;
         padding-left: 4rem;
-        min-width: 400px;
         background-size: cover;
         position: relative;
         cursor: pointer;

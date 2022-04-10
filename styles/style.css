@@ -28,6 +28,7 @@ html {
 body {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: #2a2f4a;
+  min-width: 435px;
 }
 
 a,
@@ -207,13 +208,14 @@ main .banner .get-started {
 
 main .banner .get-started p,
 main .banner .get-started button {
-  letter-spacing: 0.25em;
+  letter-spacing: 0.14em;
   font-weight: 600;
   font: inherit;
 }
 
 main .banner .get-started p {
   line-height: 25px;
+  max-width: 500px;
 }
 
 main .banner .get-started button {
@@ -267,7 +269,6 @@ main .cards-container .cards .card {
       -ms-flex-pack: center;
           justify-content: center;
   padding-left: 4rem;
-  min-width: 400px;
   background-size: cover;
   position: relative;
   cursor: pointer;
@@ -738,7 +739,7 @@ footer .footer-wrapper .copyrights {
 
 footer .footer-wrapper .copyrights p,
 footer .footer-wrapper .copyrights a {
-  color: #434f63;
+  color: #595f68;
   font-size: 1.8rem;
   font-weight: 100;
 }
@@ -777,5 +778,115 @@ footer .footer-wrapper .copyrights a:hover {
 
 footer .footer-wrapper .copyrights a:hover::before {
   background-color: #242943;
+}
+
+@media screen and (max-width: 1680px) {
+  main .cards-container .cards {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  main .cards-container .cards {
+    height: 360px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  main .banner h1 {
+    font-size: 4.6rem;
+  }
+  main .banner .get-started {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main .banner .get-started button {
+    margin: 2rem 0;
+    font-size: 1.6rem;
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  main .cards-container .cards-1 .card h2,
+  main .cards-container .cards-2 .card h2,
+  main .cards-container .cards-3 .card h2 {
+    font-size: 3.2rem;
+  }
+  main .cards-container .cards-1 .card p,
+  main .cards-container .cards-2 .card p,
+  main .cards-container .cards-3 .card p {
+    font-size: 1.4rem;
+  }
+  main .cards-container .cards-1 .card:nth-of-type(1),
+  main .cards-container .cards-2 .card:nth-of-type(1),
+  main .cards-container .cards-3 .card:nth-of-type(1) {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  main .cards-container .cards-1 .card:nth-of-type(2),
+  main .cards-container .cards-2 .card:nth-of-type(2),
+  main .cards-container .cards-3 .card:nth-of-type(2) {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  main .contact-section .contact-wrapper {
+    width: 100%;
+  }
+  main .contact-section .contact-wrapper .info-box:first-child {
+    border-top: solid 1px #363b56;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  main .banner {
+    height: 400px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  main .banner h1 {
+    font-size: 3.2rem;
+    padding: 0 0 1rem;
+    margin-bottom: -20px;
+  }
+  main .banner p {
+    font-size: 12px !important;
+  }
+  main .banner .get-started button {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    padding: 8px 16px;
+  }
+  main .banner .get-started p,
+  main .banner .get-started button {
+    letter-spacing: 0.15rem;
+  }
+  main .cards-container .cards .card {
+    padding: 0 4rem 0 2rem;
+  }
+  main .cards-container .cards .card p {
+    letter-spacing: 0.1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main .cards-container .cards .card {
+    min-width: 300px;
+  }
+  main .cards-container .cards .card h2 {
+    font-size: 2.4rem;
+    padding-bottom: 0.5rem;
+  }
+  main .cards-container .cards .card p {
+    font-size: 1.2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
